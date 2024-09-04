@@ -1,6 +1,7 @@
 import numpy as np
 from sympy import symbols, solve, primerange
-
+from sklearn.model_selection import ParameterGrid
+from collections import Counter
 
 def find_num_combs_sum_range(num_lists, ranges):
     """
@@ -8,8 +9,6 @@ def find_num_combs_sum_range(num_lists, ranges):
     :param ranges:
     :return: Total number of combinations for prime, non prime even and non prime not even
     """
-    from sklearn.model_selection import ParameterGrid
-    from collections import Counter
 
     param_grid = {"%d%d" % (r[0], r[1]): range(r[0], r[1] + 1) for r in ranges}
     comb_sums = Counter()
