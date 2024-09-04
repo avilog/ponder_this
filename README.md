@@ -1,1 +1,1 @@
-My solutions to IBM ponder this
+My solutions to IBM ponder this puzzles
